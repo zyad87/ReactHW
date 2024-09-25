@@ -1,0 +1,23 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.button-card-down {
+  border: 1px solid #9f94c6;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  color: #9f94c6;
+  font-size: 1.5em;
+  width: max-content;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-card-down:hover {
+  background-color: #9f94c6;
+  color: white;
+  transform: scale(1.05); 
+}

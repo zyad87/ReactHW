@@ -1,0 +1,105 @@
+.togglerContainer {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.colorPurple {
+  color: #4e3797;
+}
+
+.bg-toggler {
+  background-color: #f5f6fa;
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  border-radius: 10px;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  flex-wrap: wrap;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.3s ease;
+}
+
+.bg-toggler div {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem;
+  width: 15rem;
+  border-radius: 9999px;
+  border: 0px;
+  background-color: white;
+  color: #4e3797;
+  font-size: 1.25em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.active {
+  background-color: #4e3797;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #4e3797;
+  color: white;
+  cursor: pointer;
+}
+
+.iconWrapper {
+  background-color: #98a2b3;
+  border-radius: 50%;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.iconWrapper:hover {
+  background-color: #4e3797;
+  cursor: pointer;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .bg-toggler {
+    width: 90%;
+    padding: 1.5rem 2rem;
+  }
+
+  .btn {
+    width: 12rem;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-toggler {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+  }
+
+  .bg-toggler div {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .iconWrapper {
+    align-self: center;
+  }
+}

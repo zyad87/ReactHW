@@ -1,0 +1,40 @@
+.cardSectionContainer {
+  margin: 5rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f6fa; /* لون الخلفية الرمادية */
+  padding: 2rem 0; /* مساحة داخلية لجعل الحاوية لا تلتصق بالأطراف */
+}
+
+.cardsContainer {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+.card:hover {
+  transform: scale(1.05); /* تأثير التكبير عند التمرير */
+}
+
+/* تحسين التجاوب مع الشاشات الصغيرة */
+@media only screen and (max-width: 1200px) {
+  .cardsContainer {
+    width: 95%; /* تصغير العرض قليلاً للشاشات الأصغر */
+  }
+
+  .card {
+    width: 45%; /* البطاقة تكون بعرض 45% عند الشاشات الأصغر */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%; /* عرض البطاقة بالكامل في الشاشات الصغيرة */
+  }
+}

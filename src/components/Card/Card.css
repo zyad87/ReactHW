@@ -1,0 +1,106 @@
+.program-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 22rem;
+  height: 16rem;
+  text-align: end;
+  color: var(--color-purple);
+  font-weight: bolder;
+  border-right: solid 8px var(--color-purple);
+  border-radius: 15px;
+  background-color: white;
+  padding: 20px;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.program-item:hover {
+  transform: scale(1.05); /* تأثير التكبير عند التمرير */
+}
+
+.program-item-inactive {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 22rem;
+  height: 16rem;
+  text-align: end;
+  color: gray;
+  font-weight: bolder;
+  border-right: solid 8px #eceef2;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  transition: ease-in-out 0.2s;
+  cursor: not-allowed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.down-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-text-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+}
+
+.icon-text-container span {
+  color: gray;
+}
+
+.button-card,
+.button-card2,
+.button-card3,
+.button-card4,
+.button-card-inactive {
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.button-card {
+  border: 1px solid var(--color-purple);
+  color: var(--color-purple);
+}
+
+.button-card:hover {
+  background-color: var(--color-purple);
+  color: white;
+}
+
+.button-card2 {
+  border: 1px solid #abadf5;
+  color: #abadf5;
+}
+
+.button-card2:hover {
+  background-color: #abadf5;
+  color: white;
+}
+
+.button-card4 {
+  border: 1px solid #91d8db;
+  color: #91d8db;
+}
+
+.button-card4:hover {
+  background-color: #91d8db;
+  color: white;
+}
+
+.button-card-inactive {
+  border: 1px solid #eceef2;
+  background-color: #eceef2;
+  color: hsl(0, 8%, 79%);
+  cursor: not-allowed;
+}
