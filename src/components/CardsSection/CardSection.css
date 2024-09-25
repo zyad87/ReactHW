@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f6fa; /* لون الخلفية الرمادية */
-  padding: 2rem 0; /* مساحة داخلية لجعل الحاوية لا تلتصق بالأطراف */
+  background-color: #f5f6fa; 
+  padding: 2rem 0; 
 }
 
 .cardsContainer {
@@ -19,22 +19,21 @@
 
 
 .card:hover {
-  transform: scale(1.05); /* تأثير التكبير عند التمرير */
+  transform: scale(1.05); 
 }
 
-/* تحسين التجاوب مع الشاشات الصغيرة */
 @media only screen and (max-width: 1200px) {
   .cardsContainer {
-    width: 95%; /* تصغير العرض قليلاً للشاشات الأصغر */
+    width: 95%; 
   }
 
   .card {
-    width: 45%; /* البطاقة تكون بعرض 45% عند الشاشات الأصغر */
+    width: 45%; 
   }
 }
 
 @media only screen and (max-width: 768px) {
   .card {
-    width: 90%; /* عرض البطاقة بالكامل في الشاشات الصغيرة */
+    width: 90%; 
   }
 }

@@ -12,8 +12,8 @@ function CardSection() {
   type="برنامج"
   title="برنامج تطوير الويب"
   location="الرياض"
-  date="01/10/2024" // تاريخ بدء البرنامج
-  duration="ثلاثة أسابيع" // مدة البرنامج ثلاث أسابيع
+  date="01/10/2024" 
+  duration="ثلاثة أسابيع" 
   btn="التفاصيل"
 />
 
@@ -31,7 +31,7 @@ function CardSection() {
   type="لقاء"
   title=" React لقاء"
   location="الرياض"
-  date="15/05/2024" // تاريخ اللقاء
+  date="15/05/2024" 
   duration="يوم"
   btn="التفاصيل"
         image="https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png"

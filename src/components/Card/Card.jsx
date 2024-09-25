@@ -43,15 +43,12 @@ function Card(props) {
           }}
         />
       )}
-        {/* <p>لقاء</p> */}
         <h3>{props.type}</h3>
-        {/* <h3>حوكمة وسرية البيانات في بيئة العمل</h3> */}
         <h3 style={{ color: 'black' ,marginTop:"10px"}}>{props.title}</h3>
       </div>
       <div className="wrapper-down-card">
         <div className="icon-text-container">
           <img src={locationIcon} alt="" />
-          {/* <span>الرياض</span> */}
           <span>{props.location}</span>
           <img width="25px" height="30px" src={calenderIcon} alt="" />
           <span>{props.duration}</span>
@@ -59,10 +56,8 @@ function Card(props) {
         <div className="down-wrapper">
           <div className="icon-text-container">
             <img width="25px" height="30px" src={locationIcon} alt="" />
-            {/* <span>يبدأ في 15/05/2024</span> */}
             <span>يبدأ في {props.date}</span>
           </div>
-          {/* <span className="button-card">التفاصيل</span> */}
           <span className={` ${colorChosen[1]}`}>{props.btn}</span>
         </div>
       </div>
