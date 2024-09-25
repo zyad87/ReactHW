@@ -14,7 +14,7 @@ function App() {
   textAlign: 'right',
   fontSize: '2.5rem',
   fontFamily: 'Tajawal, sans-serif',
-  padding: '1rem',
+  padding: '2rem',
   margin: '0',
   backgroundColor: '#4E3797',
 }}>
