@@ -22,20 +22,24 @@ function Card(props) {
 
   return (
     <div
-      style={{ color: colorChosen[0], borderColor: colorChosen[0] }}
+      style={{ color: colorChosen[0], borderColor: colorChosen[0]}}
       className={flagPast == false ? 'program-item-inactive' : 'program-item'}
     >
-      <div>
+      <div style={{position:"relative"}}>
       {props.image && (
         <img
           src={props.image}
           alt={props.title}
           style={{
+            position:"absolute",
+            bottom:"75px",
+            left:"10px",
             width: '50px',
             height: '50px',
             borderRadius: '50%',
             marginBottom: '10px',
-            float:"left"
+            backgroundColor:"#fff",
+            
           }}
         />
       )}
