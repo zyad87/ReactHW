@@ -86,7 +86,7 @@ nav div {
 
   .nav-links.open {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .nav-links.open li {
